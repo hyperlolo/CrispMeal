@@ -1,11 +1,15 @@
 import './App.css'
+import {Header} from './components';
 
 function App() {
 
+
   return (
-    <h1 className="text-1xl font-bold underline">
-      Hello world!
-    </h1>
+    <div className="app">
+      <div className="flex header justify-center">
+      <Header/>
+      </div>
+    </div>
   );
 }
 
