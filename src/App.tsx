@@ -1,7 +1,6 @@
 import "./App.css";
 import { Header, Card } from "./components";
 import {data} from "./assets/data/recipe";
-import onionJpg from "./assets/images/pickled-onions.jpg";
 
 function App() {
   return (

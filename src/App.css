@@ -9,6 +9,8 @@
 
 html {
   background-image: url("./assets/images/sanji_cooking.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .header {
   background-position: 50% 23%;

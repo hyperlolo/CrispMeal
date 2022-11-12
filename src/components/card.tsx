@@ -19,15 +19,14 @@ export function Card({
   instructions,
 }: CardProps) {
   return (
-    <div>
-      <div className="max-w-sm w-full lg:max-w-full lg:flex">
+    <div className="card flex">
+      <div className="content max-w-sm w-full lg:max-w-full lg:flex">
         <img
           className="h-auto lg:h-auto lg:w-1/4 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
           src={image}
           title={altText}
         />
         <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-          <div className="mb-8">
             <div className="text-gray-900 font-bold text-xl mb-2">{title}</div>
             <div className="text-gray-900 text-base">
               {instructions?.map((instruction) => (
@@ -42,7 +41,7 @@ export function Card({
                     <p className="text-gray-800 text-base">{ingredient}</p>
                   ))}
                 </div>
-                <div className="">
+                <div>
                   <p className="font-bold">Optional Ingredients:</p>
                   {optionalIngredients?.map((optionalIngredient) => (
                     <p className="text-gray-500 text-base flex">
@@ -52,7 +51,6 @@ export function Card({
                 </div>
               </div>
             </div>
-          </div>
         </div>
       </div>
     </div>
